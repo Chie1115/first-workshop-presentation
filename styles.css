@@ -1,9 +1,7 @@
 /* 全体のスタイル */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    line-height: 1.5;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -17,7 +15,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem;  /*font-size: 2.5rem で明示的に指定することで、どのブラウザでも同じサイズにすることができます*/
 }
 
 nav ul {
@@ -26,7 +24,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline; 
     margin: 0 10px;
 }
 
@@ -46,11 +44,14 @@ section {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2rem;            /*ユーザーがブラウザのフォントサイズ設定を変更する場合、rem を使っていれば、全体のテキストサイズが相対的にスケーリングされる。
+    　　　　　　　　　　　　　　　rem はデバイスの画面サイズや解像度に関係なく、一貫したスケーリングを提供します。
+    　　　　　　　　　　　　　　　これにより、レスポンシブデザインにおいても、異なるデバイスでの文字サイズを適切に調整できます。*/
     margin-bottom: 10px;
 }
 
-article {
+article {                       /*article 要素を使うことで、スクリーンリーダーなどの支援技術が文書の構造を理解しやすくなります。
+                                article 要素が独立したコンテンツであることを明示することで、ユーザーにとってナビゲーションがしやすくなります。*/
     margin-bottom: 20px;
 }
 
