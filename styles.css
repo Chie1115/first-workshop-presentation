@@ -1,66 +1,67 @@
 /* 全体のスタイル */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* 全体のフォントをArialに設定、sans-serifはフォールバックとして指定 */
+    line-height: 1.5; /* 行間をフォントサイズの1.5倍に設定して、テキストの可読性を向上させる */
+    background-color: #f4f4f4; /* ページの背景色をライトグレーに設定 */
+    color: #333; /* テキストの色をダークグレーに設定 */
 }
 
 /* ヘッダー */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* ヘッダーの背景色をダークグレーに設定 */
+    color: #fff; /* ヘッダー内のテキスト色を白に設定 */
+    padding: 20px; /* ヘッダーの内側に20pxのパディングを追加 */
+    text-align: center; /* ヘッダー内のテキストを中央揃え */
 }
 
 header h1 {
-    font-size: 2.5rem;  /*font-size: 2.5rem で明示的に指定することで、どのブラウザでも同じサイズにすることができます*/
+    font-size: 2.5rem;  /* ヘッダーのタイトルのフォントサイズを2.5remに設定。remは相対単位で、ブラウザのデフォルトフォントサイズに基づく */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* ナビゲーションのリストのデフォルトのマーカーを削除 */
+    padding: 0; /* リストの内側のパディングを削除 */
 }
 
 nav ul li {
-    display: inline; 
-    margin: 0 10px;
+    display: inline; /* ナビゲーションのリストアイテムを横並びに表示 */
+    margin: 0 10px; /* リストアイテムの左右に10pxのマージンを追加 */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+    color: #fff; /* ナビゲーションリンクのテキスト色を白に設定 */
+    text-decoration: none; /* ナビゲーションリンクのデフォルトの下線を削除 */
+    font-weight: bold; /* ナビゲーションリンクのフォントを太字に設定 */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* リンクにホバーしたときに下線を表示 */
 }
 
 /* セクション */
 section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* セクション内の内側に20pxのパディングを追加 */
+    margin: 20px auto; /* セクションを上下20pxのマージンで囲み、自動で水平センタリング */
+    background-color: #fff; /* セクションの背景色を白に設定 */
+    border-radius: 5px; /* セクションの角を5pxの半径で丸める */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* セクションに10pxのぼかし効果を持つ影を追加 */
 }
 
 h2 {
-    font-size: 2rem;            /*ユーザーがブラウザのフォントサイズ設定を変更する場合、rem を使っていれば、全体のテキストサイズが相対的にスケーリングされる。
-    　　　　　　　　　　　　　　　rem はデバイスの画面サイズや解像度に関係なく、一貫したスケーリングを提供します。
-    　　　　　　　　　　　　　　　これにより、レスポンシブデザインにおいても、異なるデバイスでの文字サイズを適切に調整できます。*/
-    margin-bottom: 10px;
+    font-size: 2rem; /* 見出し2のフォントサイズを2remに設定。remは相対単位で、全体のスケーリングを一貫して保つ */
+    margin-bottom: 10px; /* 見出し2の下に10pxのマージンを追加 */
 }
 
-article {                       /*article 要素を使うことで、スクリーンリーダーなどの支援技術が文書の構造を理解しやすくなります。
-                                article 要素が独立したコンテンツであることを明示することで、ユーザーにとってナビゲーションがしやすくなります。*/
-    margin-bottom: 20px;
+article {
+    margin-bottom: 20px; /* 各記事の下に20pxのマージンを追加 */
 }
 
 /* フッター */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+    text-align: center; /* フッター内のテキストを中央揃え */
+    padding: 10px; /* フッターの内側に10pxのパディングを追加 */
+    background-color: #333; /* フッターの背景色をダークグレーに設定 */
+    color: #fff; /* フッター内のテキスト色を白に設定 */
 }
 
 /* メディアクエリ */
@@ -68,54 +69,55 @@ footer {
 /* モバイルデバイス */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* モバイルデバイスではヘッダーのフォントサイズを1.8remに設定 */
     }
 
     nav ul {
-        text-align: center;
+        text-align: center; /* ナビゲーションのリストアイテムを中央揃えに設定 */
     }
 
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* ナビゲーションのリストアイテムを縦に表示 */
+        margin: 10px 0; /* リストアイテムの上下に10pxのマージンを追加 */
     }
 
     section {
-        padding: 10px;
+        padding: 10px; /* モバイルデバイスではセクションのパディングを10pxに設定 */
     }
 }
 
 /* タブレット */
 @media (min-width: 481px) and (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* タブレットではヘッダーのフォントサイズを2remに設定 */
     }
 
     nav ul {
-        text-align: center;
+        text-align: center; /* ナビゲーションのリストアイテムを中央揃えに設定 */
     }
 
     nav ul li {
-        display: inline;
-        margin: 0 15px;
+        display: inline; /* ナビゲーションのリストアイテムを横並びに設定 */
+        margin: 0 15px; /* リストアイテムの左右に15pxのマージンを追加 */
     }
 
     section {
-        padding: 15px;
+        padding: 15px; /* タブレットではセクションのパディングを15pxに設定 */
+        margin: 20px 0; /* セクションの上下に20pxのマージンを設定 */
     }
 }
 
 /* デスクトップ */
 @media (min-width: 769px) {
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* デスクトップではヘッダーのフォントサイズを2.5remに設定 */
     }
 
     nav ul {
-        text-align: center;
+        text-align: center; /* ナビゲーションのリストアイテムを中央揃えに設定 */
     }
 
     section {
-        padding: 20px;
+        padding: 20px; /* デスクトップではセクションのパディングを20pxに設定 */
     }
 }
