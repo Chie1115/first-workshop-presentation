@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- ページのビューポートを設定し、モバイルフレンドリーに -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 検索エンジン向けのページ説明 -->
     <meta name="description" content="Simple Responsive Webpage with Semantic HTML">
     <title>My Responsive Webpage</title>
+    <!-- 外部CSSファイルをリンク -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- ヘッダー部分 -->
     <header>
+        <!-- メインタイトル -->
         <h1>My Responsive Website</h1>
         <!-- ナビゲーションメニュー -->
         <nav>
             <ul>
+                <!-- 各セクションへのリンク -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -31,11 +36,13 @@
     <!-- アバウトセクション -->
     <section id="about">
         <h2>About Us</h2>
-        <!-- 個別の記事 -->
+        <!-- ミッションについての記事 -->
+        <!-- article 要素を使うと、支援技術が文書構造を理解しやすくなり、独立したコンテンツとしてナビゲーションが容易になります。-->
         <article>
             <h3>Our Mission</h3>
             <p>We aim to provide high-quality services to our clients while ensuring accessibility and usability.</p>
         </article>
+        <!-- チームについての記事 -->
         <article>
             <h3>Our Team</h3>
             <p>Our team consists of dedicated professionals who are experts in their respective fields.</p>
@@ -45,7 +52,7 @@
     <!-- サービスセクション -->
     <section id="services">
         <h2>Our Services</h2>
-        <!-- サービスのリスト -->
+        <!-- 提供するサービスのリスト -->
         <ul>
             <li>Web Design</li>
             <li>SEO Optimization</li>
@@ -57,6 +64,7 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>If you have any questions or need more information, feel free to contact us at:</p>
+        <!-- メールリンク -->
         <p>Email: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
         <p>Phone: 123-456-7890</p>
     </section>
@@ -64,8 +72,8 @@
     <!-- フッター部分 -->
     <footer>
         <p>Contact us at: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+        <!-- 著作権表示 -->
         <p>&copy; 2024 My Responsive Website</p>
     </footer>
 </body>
 </html>
-
