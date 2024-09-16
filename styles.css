@@ -1,7 +1,7 @@
 /* 全体のスタイル */
 body {
     font-family: Arial, sans-serif; /* 全体のフォントをArialに設定、sans-serifはフォールバックとして指定 */
-    line-height: 1.5; /* 行間をフォントサイズの1.5倍に設定して、テキストの可読性を向上させる */
+    line-height: 1.5; /* 行間をフォントサイズの1.5倍に設定 */
     background-color: #f4f4f4; /* ページの背景色をライトグレーに設定 */
     color: #333; /* テキストの色をダークグレーに設定 */
 }
@@ -19,12 +19,12 @@ header h1 {
 }
 
 nav ul {
-    list-style: none; /* ナビゲーションのリストのデフォルトのマーカーを削除 */
+    list-style: none; /* ナビゲーションのリストのデフォルトのマーカーや余白を削除 */
     padding: 0; /* リストの内側のパディングを削除 */
 }
 
 nav ul li {
-    display: inline; /* ナビゲーションのリストアイテムを横並びに表示 */
+    display: inline; /* ナビゲーションのリストアイテムを横並びに表示 ナビゲーションがフローティングしており、すっきりとした水平メニューに。*/
     margin: 0 10px; /* リストアイテムの左右に10pxのマージンを追加 */
 }
 
@@ -40,7 +40,7 @@ nav ul li a:hover {
 
 /* セクション */
 section {
-    padding: 20px; /* セクション内の内側に20pxのパディングを追加 */
+    padding: 20px;/* セクション内の内側に20pxのパディングを追加 */
     margin: 20px auto; /* セクションを上下20pxのマージンで囲み、自動で水平センタリング */
     background-color: #fff; /* セクションの背景色を白に設定 */
     border-radius: 5px; /* セクションの角を5pxの半径で丸める */
@@ -66,7 +66,7 @@ footer {
 
 /* メディアクエリ */
 
-/* モバイルデバイス */
+/* モバイルデバイス（幅480px以下） */
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.8rem; /* モバイルデバイスではヘッダーのフォントサイズを1.8remに設定 */
@@ -82,11 +82,11 @@ footer {
     }
 
     section {
-        padding: 10px; /* モバイルデバイスではセクションのパディングを10pxに設定 */
+        padding: 10px; /* モバイルデバイスではセクションのパディングを10pxに設定,限られた画面スペースを有効に活用 */
     }
 }
 
-/* タブレット */
+/* タブレット（幅481px〜768px） */
 @media (min-width: 481px) and (max-width: 768px) {
     header h1 {
         font-size: 2rem; /* タブレットではヘッダーのフォントサイズを2remに設定 */
@@ -107,7 +107,7 @@ footer {
     }
 }
 
-/* デスクトップ */
+/* デスクトップ （幅769px以上）*/
 @media (min-width: 769px) {
     header h1 {
         font-size: 2.5rem; /* デスクトップではヘッダーのフォントサイズを2.5remに設定 */
